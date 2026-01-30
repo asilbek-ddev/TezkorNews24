@@ -5,6 +5,11 @@
     @apply max-w-350 mx-auto;
   }
   body {
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
     width: 100%;
     height: 100vh;
     background: linear-gradient(

@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+// import NewsComponent from "../components/NewsComponent";
 import SEO from "../components/SEO";
 
 interface HomeProps {
@@ -25,7 +26,10 @@ const Home: React.FC<HomeProps> = ({ news }) => {
 
       {/* // * Navbar */}
       <Navbar />
-      
+
+      {/* // * Main */}
+      {/* <NewsComponent /> */}
+
       {/* // * Footer */}
       <Footer />
     </>

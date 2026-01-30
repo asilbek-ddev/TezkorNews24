@@ -13,7 +13,7 @@ const Footer = () => {
           className="flex items-center text-xl font-black text-[#0C2F75] uppercase"
         >
           Tezkor News{" "}
-          <span className="w-8 h-8 flex items-center bg-[#0C2F75] border border-[#0C2F75] rounded-full p-1 text-white">
+          <span className="w-9 h-9 flex items-center bg-[#0C2F75] border border-[#0C2F75] rounded-full p-1 text-white">
             24
           </span>
         </RouterLink>
