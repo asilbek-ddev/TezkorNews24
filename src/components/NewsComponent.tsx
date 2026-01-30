@@ -3,7 +3,7 @@ import axios from "axios";
 
 interface NewsData {
   status: string;
-  results: any[]; // keyinchalik aniqroq tip qo'yish mumkin (masalan NewsItem[])
+  results: any[];
 }
 
 const NewsComponent = () => {
@@ -11,7 +11,7 @@ const NewsComponent = () => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const countries = "uz,us,ru,tr,de";
+  const countries = "us,ru,tr,de";
   const cacheKey = `latestNews_${countries.replace(/,/g, "_")}`;
 
   useEffect(() => {
