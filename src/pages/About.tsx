@@ -1,22 +1,17 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import NewsComponent from "../components/NewsComponent";
 import SEO from "../components/SEO";
 
-const Home = () => {
+const About = () => {
   return (
     <>
-      {/* // * SEO */}
       <SEO
-        title={"Tezkor News24"}
+        title={"Sayt haqida | Tezkor News24"}
         description={"Tezkor News24 - Eng so'nggi yangiliklar va maqolalar."}
       />
 
       {/* // * Navbar */}
       <Navbar />
-
-      {/* // * Main */}
-      <NewsComponent />
 
       {/* // * Footer */}
       <Footer />
@@ -24,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

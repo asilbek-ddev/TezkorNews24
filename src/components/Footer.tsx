@@ -6,13 +6,13 @@ import youtubeSvg from "../assets/youtube.svg";
 
 const Footer = () => {
   return (
-    <footer className="containers flex flex-col border-t border-gray-400 mt-10 py-2 px-3.5">
+    <footer className="containers flex-col mt-10 py-2 hidden lg:flex select-none px-4">
       <div className="flex items-center justify-between">
         <RouterLink
           to="/"
           className="flex items-center text-xl font-black text-[#0C2F75] uppercase"
         >
-          Tezkor News{" "}
+          Tezkor-News{" "}
           <span className="w-9 h-9 flex items-center bg-[#0C2F75] border border-[#0C2F75] rounded-full p-1 text-white">
             24
           </span>
@@ -60,7 +60,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.twitter.com/tezkornews24"
+              href="https://www.youtube.com/tezkornews24"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -70,7 +70,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.youtube.com/tezkornews24"
+              href="https://t.me/tezkornews24"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -79,7 +79,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p className="text-center text-gray-500 mt-4">
+      <p className="text-center text-gray-500 mt-4 cursor-text">
         &copy; {new Date().getFullYear()} Tezkor News 24. Barcha huquqlar
         himoyalangan.
       </p>
