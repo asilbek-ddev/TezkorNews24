@@ -2,7 +2,7 @@
 
 @layer components {
   .containers {
-    @apply max-w-364 mx-auto sm:px-6 lg:px-8;
+    @apply max-w-350 mx-auto;
   }
   body {
     width: 100%;

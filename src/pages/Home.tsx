@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import SEO from "../components/SEO";
 
@@ -24,6 +25,9 @@ const Home: React.FC<HomeProps> = ({ news }) => {
 
       {/* // * Navbar */}
       <Navbar />
+      
+      {/* // * Footer */}
+      <Footer />
     </>
   );
 };
