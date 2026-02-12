@@ -11,7 +11,7 @@ const NewsComponent = () => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const countries = "us,ru,tr,de";
+  const countries = "uz,us,ru,tr,de";
   const cacheKey = `latestNews_${countries.replace(/,/g, "_")}`;
 
   useEffect(() => {
@@ -108,16 +108,13 @@ const NewsComponent = () => {
               src={item.image_url || "/placeholder-news.jpg"}
               alt={item.title || "Yangilik rasmi"}
               className="w-full h-48 object-cover"
-              onError={(e) => {
-                (e.target as HTMLImageElement).src = "/placeholder-news.jpg";
-              }}
             />
             <div className="p-4 flex flex-col grow">
               <h2>
                 Manba:
                 <b>
                   <a
-                    className="hover:underline "
+                    className="underline text-blue-500"
                     href={item.source_url || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
